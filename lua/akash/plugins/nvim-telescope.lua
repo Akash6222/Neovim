@@ -56,7 +56,7 @@ function M.config()
 
   telescope.setup({
     defaults = {
-      initial_mode = "normal",
+      initial_mode = "insert",
       prompt_prefix = icons.ui.Telescope .. " ",
       selection_caret = " ",
       path_display = { "smart" },

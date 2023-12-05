@@ -199,7 +199,7 @@ function M.config()
       dashboard.button(
         "p",
         "  Projects",
-        "<cmd>lua require('telescope').extensions.projects.projects(require('telescope.themes').get_dropdown{previewer = false, initial_mode = normal})<cr>"
+        "<cmd>lua require('telescope').extensions.projects.projects(require('telescope.themes').get_dropdown{previewer = true, initial_mode = insert})<cr>"
       ),
       dashboard.button("c", "  Configuration", "<cmd>e ~/.config/nvim/init.lua <CR>"),
       dashboard.button("u", "  Update plugins", "<cmd>Lazy update<CR>"),
