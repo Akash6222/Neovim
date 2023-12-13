@@ -101,4 +101,7 @@ keymap("i", "<C-A-Up>", "<Esc>:t.<CR>a", opts)
 keymap("n", "<C-A-Down>", ":t.<CR>", opts)
 keymap("i", "<C-A-Down>", "<Esc>:t.<CR>a", opts)
 
+-- Delete a word in insert mode and normal mode with Ctrl+Backspace
+keymap("i", "<C-BS>", "<C-w>", opts)
+keymap("n", "<C-BS>", "db", opts)
 
