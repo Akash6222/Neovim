@@ -92,3 +92,13 @@ keymap("n", "<leader>o", "<cmd>URLOpenUnderCursor<CR>", opts)
 keymap("n", "<leader>O", "<cmd>Octo<cr>", opts)
 keymap("n", "<leader>Op", "<cmd>Octo pr list<cr>", opts)
 
+
+-- Copy current line to above line in normal and insert mode
+keymap("n", "<C-A-Up>", ":t.<CR>", opts)
+keymap("i", "<C-A-Up>", "<Esc>:t.<CR>a", opts)
+
+-- Copy current line to below line in normal and insert mode
+keymap("n", "<C-A-Down>", ":t.<CR>", opts)
+keymap("i", "<C-A-Down>", "<Esc>:t.<CR>a", opts)
+
+
