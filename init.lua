@@ -1,14 +1,10 @@
 vim.loader.enable()
 
-require("rj.options")
-require("rj.lazy")
-require("rj.autocommands")
-require("rj.keymaps")
+require("ad.options")
+require("ad.lazy")
+require("ad.autocommands")
+require("ad.keymaps")
+
 
 -- Bufferline 
 require("bufferline").setup{}
-
--- Discord 
-require("presence").setup{}
-
-
