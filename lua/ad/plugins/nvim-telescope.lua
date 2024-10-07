@@ -55,7 +55,7 @@ function M.config()
 
   telescope.setup({
     defaults = {
-      initial_mode = "normal",
+      initial_mode = "insert",
       prompt_prefix = " ",
       selection_caret = " ",
       path_display = { "smart" },
@@ -177,25 +177,19 @@ function M.config()
     },
     pickers = {
       current_buffer_fuzzy_find = {
-        theme = "dropdown",
         previewer = true,
       },
       oldfiles = {
-        theme = "dropdown",
         previewer = true,
       },
       live_grep = {
-        theme = "dropdown",
       },
       grep_string = {
-        theme = "dropdown",
       },
       find_files = {
-        theme = "dropdown",
         previewer = true,
       },
       buffers = {
-        theme = "dropdown",
         previewer = false,
       },
       planets = {
@@ -203,19 +197,14 @@ function M.config()
         show_moon = true,
       },
       lsp_references = {
-        theme = "dropdown",
       },
       lsp_definitions = {
-        theme = "dropdown",
       },
       lsp_declarations = {
-        theme = "dropdown",
       },
       lsp_implementations = {
-        theme = "dropdown",
       },
       git_branches = {
-        theme = "dropdown",
       },
       -- Default configuration for builtin pickers goes here:
       -- picker_name = {
