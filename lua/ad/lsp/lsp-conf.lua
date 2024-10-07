@@ -13,7 +13,6 @@ local servers = {
   marksman = "marksman",
   taplo = "taplo",
   ts_ls = "typescript-language-server",
-  ansiblels = "ansible-language-server",
 }
 for k, v in pairs(servers) do
   if vim.fn.executable(v) == 1 then
