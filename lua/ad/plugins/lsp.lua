@@ -25,6 +25,7 @@ return {
       "xml",
       "yaml",
       "zsh",
+      "ansible"
     },
     lazy = true,
     config = function()
@@ -42,7 +43,7 @@ return {
   },
   {
     "mrcjkb/rustaceanvim",
-    version = "^4", -- Recommended
+    version = "^5",
     ft = { "rust" },
     dependencies = {
       "hrsh7th/cmp-nvim-lsp",
@@ -65,6 +66,7 @@ return {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "LspAttach",
+    cmd = "Trouble",
     opts = {},
   },
   {

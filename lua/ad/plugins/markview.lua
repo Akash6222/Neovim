@@ -1,14 +1,10 @@
--- For plugins/markview.lua users
 return {
   "OXY2DEV/markview.nvim",
-  enabled = false,
-  branch = "dev",
-  ft = "markdown",
-  dependencies = {
-    "nvim-tree/nvim-web-devicons", -- Used by the code bloxks
-  },
+  ft = "markdown", -- If you decide to lazy-load anyway
+  enabled = true,
 
-  config = function()
-    require("markview").setup({})
-  end,
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-tree/nvim-web-devicons",
+  },
 }

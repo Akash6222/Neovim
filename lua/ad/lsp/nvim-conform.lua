@@ -66,7 +66,7 @@ conform.setup({
     pyfix_imports = {
       command = "pyfix-imports",
       args = { "$FILENAME" },
-      cwd = require("conform.util").root_file({ "requirements.txt", "pyproject.toml" }),
+      cwd = require("conform.util").root_file({ "requirements.txt", "pyproject.toml", ".git" }),
     },
   },
 })

@@ -12,7 +12,8 @@ local servers = {
   lemminx = "lemminx",
   marksman = "marksman",
   taplo = "taplo",
-  tsserver = "typescript-language-server",
+  ts_ls = "typescript-language-server",
+  ansiblels = "ansible-language-server",
 }
 for k, v in pairs(servers) do
   if vim.fn.executable(v) == 1 then
@@ -21,7 +22,7 @@ for k, v in pairs(servers) do
       capabilities = require("ad.lsp.attach").capabilities,
     })
   else
-    vim.notify("LSP servers are not Installed.")
+    vim.notify(string.format("LSP server: %s is not Installed.", k))
     vim.notify("Run - :MasonToolsInstall to install all the LSP")
   end
 end

@@ -111,6 +111,12 @@ vim.cmd([[
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
 ]])
 
+vim.api.nvim_create_user_command("Grep", function(opts)
+  local command = string.format('silent cgetexpr system("rg --vimgrep -S %s")', opts.args)
+  vim.cmd(command)
+  vim.cmd("Trouble quickfix focus")
+end, { nargs = 1 })
+
 -- Hyprlang LSP
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   callback = function(event)
