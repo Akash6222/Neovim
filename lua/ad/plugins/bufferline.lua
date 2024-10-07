@@ -1,6 +1,5 @@
 local M = {
   "akinsho/bufferline.nvim",
-  enabled = true,
 }
 
 function M.config()
