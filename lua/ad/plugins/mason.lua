@@ -42,6 +42,11 @@ function M.config()
       "taplo",
       "ts_ls",
       "yamlls",
+      "termux-language-server",
+      "docker_compose_language_service",
+      "mesonlsp",
+      "sqlls",
+      "ansiblels",
 
       -- debug adapters
       "codelldb",

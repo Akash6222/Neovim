@@ -29,9 +29,10 @@ keymap("n", "<C-Down>", "<cmd>resize +2<CR>", opts)
 keymap("n", "<C-Left>", "<cmd>vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", "<cmd>vertical resize +2<CR>", opts)
 
--- Navigate buffers
-keymap("n", "<S-l>", "<cmd>bnext<CR>", opts)
-keymap("n", "<S-h>", "<cmd>bprevious<CR>", opts)
+-- Navigate buffers with Tab and Shift+Tab
+keymap("n", "<Tab>", "<cmd>bnext<CR>", opts)
+keymap("n", "<S-Tab>", "<cmd>bprevious<CR>", opts)
+
 
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
